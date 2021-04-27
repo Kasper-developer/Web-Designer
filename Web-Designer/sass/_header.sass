@@ -1,0 +1,271 @@
+.header
+	&-wrap
+		padding-bottom: 45px
+		display: flex
+		align-items: center
+		justify-content: space-between
+		flex-wrap: wrap
+	&-logo
+		display: flex
+		flex-direction: column
+		&__text
+			margin-top: -35px
+			text-align: center
+			font-size: 13px
+			line-height: 16px
+			letter-spacing: 0.795em
+	&-span
+		position: relative
+		font-size: 25px
+		line-height: 38px
+		+bold
+		& a
+			color: black
+		&::after
+			content: ''
+			position: absolute
+			left: 0
+			bottom: 0
+			width: 140%
+			height: 1px
+			margin: 0 0 -3px -15px
+			display: inline-block
+			background-color: #000
+			opacity: .7
+	&-contacts
+		display: flex
+		align-items: center
+		&__phone
+			font-size: 20px
+			line-height: 24px
+			margin-right: 15px
+			& a
+				color: #000
+		&__btn
+			padding: 8px 15px
+			border: 1px solid #000000
+			box-sizing: border-box
+			border-radius: 13px
+			& a
+				color: #000
+				font-size: 20px
+				line-height: 24px
+			&:hover
+				background: #FFD954
+	&-nav
+		margin-top: 25px
+		width: 100%
+		&__list
+			position: relative
+			display: flex
+			justify-content: space-between 
+			&::before
+				content: ''
+				position: absolute
+				width: 99%
+				margin-left: 2%
+				margin-top: -14px
+				height: 2px
+				background: grey
+				top: 0
+				opacity: .8
+		&__link
+			margin-left: 50px
+			font-size: 20px
+			line-height: 24px
+			color: #000
+			&:hover
+				font-weight: bold
+	&-burger
+		display: none
+		position: absolute
+		top: 40px
+		right: 20px
+		z-index: 11
+		width: 40px
+		height: 28px
+		border: 0
+		background: 0 0
+		padding: 0
+		&__item
+			display: block
+			width: 100%
+			height: 4px
+			margin-bottom: 8px
+			background-color: #000000
+			border-radius: 20px
+			-webkit-transition: all .2s linear
+			-o-transition: all .2s linear
+			transition: all .2s linear
+
+@media screen and ( max-width: 1206px )
+	.header
+		&-nav
+			&__link
+				display: flex
+				margin-left: 27px
+				font-size: 18px
+				text-align: center
+
+@media screen and ( max-width: 993px )
+	.header
+		&-wrap
+			padding-bottom: 35px
+		&-span
+			display: none
+		&-contacts
+			flex-direction: column
+			&__phone
+				font-size: 18px
+				text-align: center
+			&__btn
+				margin-top: 10px
+				margin-bottom: -20px
+				& a
+					font-size: 18px
+		&-nav
+			&__link
+				margin-left: 28px
+				font-size: 18px
+
+@media screen and ( max-width: 768px )
+	body
+		&.lock
+			overflow: hidden
+	.header
+		margin-bottom: 20px
+		&-wrap
+			padding-bottom: 10px
+		&-logo
+			display: flex
+			justify-content: start	
+		&-span
+			display: none
+		&-contacts
+			flex-direction: column
+			&__phone
+				font-size: 18px
+				text-align: center
+			&__btn
+				margin-top: 10px
+				margin-bottom: -20px
+				& a
+					font-size: 18px
+		&-nav
+			position: absolute
+			top: -100%
+			left: 0
+			&__list
+				display: flex
+				justify-content: center
+				align-items: center
+				height: 490px
+				width: 768px
+				display: flex
+				flex-direction: column
+				position: absolute
+				top: -100px
+				right: 0
+				background-color: #FFD954
+				transition: all .3s
+				&::before
+					display: none
+			&__link
+				text-align: center
+				transition: all 0.3
+				margin-bottom: 25px
+				margin-left: 0 !important
+				&:hover
+					text-decoration: underline
+			&.active
+				transition: all .3s
+				top: 50px
+				display: flex
+			&__link
+				margin-left: 28px
+				font-size: 18px
+		&-burger
+			display: block
+			&__item
+				&.active:nth-last-child(2)
+					transition: all 0.3s
+					opacity: 0
+				&.active:first-child
+					webkit-transform-origin: left center
+					-ms-transform-origin: left center
+					transform-origin: left center
+					transform: rotate(37deg)
+				&.active:last-child
+					webkit-transform-origin: left center
+					-ms-transform-origin: left center
+					transform-origin: left center
+					-webkit-transform: rotate(-39deg)
+					-ms-transform: rotate(-39deg)
+					transform: rotate(-39deg)	
+					top: 9px
+		&-span, &-contacts
+			display: none
+		&.active
+			height: 100vh
+			display: -webkit-box
+			display: -ms-flexbox
+			display: flex
+			-webkit-box-pack: center
+			-ms-flex-pack: center
+			justify-content: center
+			-webkit-box-orient: vertical
+			-webkit-box-direction: normal
+			-ms-flex-direction: column
+			flex-direction: column
+			overflow: auto
+
+@media screen and ( max-width: 370px )
+	.header
+		&-wrap
+		&-logo
+			&__text
+				margin-top: -30px
+				font-size: 11px
+
+@media screen and ( max-width: 650px )
+	.header
+		&-nav
+			&__list
+				width: 650px
+
+@media screen and ( max-width: 600px )
+	.header
+		&-nav
+			&__list
+				width: 600px
+
+@media screen and ( max-width: 550px )
+	.header
+		&-nav
+			&__list
+				width: 550px
+
+@media screen and ( max-width: 500px )
+	.header
+		&-nav
+			&__list
+				width: 500px
+
+@media screen and ( max-width: 450px )
+	.header
+		&-nav
+			&__list
+				height: 450px
+				width: 450px
+
+@media screen and ( max-width: 400px )
+	.header
+		&-nav
+			&__list
+				width: 400px
+
+@media screen and ( max-width: 350px )
+	.header
+		&-nav
+			&__list
+				width: 350px

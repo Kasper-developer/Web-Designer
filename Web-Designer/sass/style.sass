@@ -1,0 +1,158 @@
+@import 'fonts'
+@import 'swiper'
+@import 'header'
+@import 'description'
+@import 'offer'
+@import 'want'
+@import 'work'
+@import 'write'
+@import 'portfolio'
+@import 'questions'
+@import 'review'
+@import 'footer'
+
+
+body
+	+reg
+
+.container
+	max-width: 1440px
+	margin: 0 auto
+	padding: 0px 20px
+
+.btn
+	padding: 18px 45px
+	display: inline-block
+	border: 3px solid #000000 
+	box-sizing: border-box
+	border-radius: 13px
+	& a
+		font-size: 30px
+		line-height: 44px
+		color: #000
+		+semibold
+
+@media screen and ( max-width: 1920px )
+	.title
+		font-size: 30px
+		line-height: 61px
+		text-align: center
+		+semibold
+
+
+.swiper-container
+	width: 100%
+	height: 100%
+
+.swiper-slide
+	text-align: center
+	font-size: 18px
+	background: #fff
+	display: -webkit-box
+	display: -ms-flexbox
+	display: -webkit-flex
+	display: flex
+	-webkit-box-pack: center
+	-ms-flex-pack: center
+	-webkit-justify-content: center
+	justify-content: center
+	-webkit-box-align: center
+	-ms-flex-align: center
+	-webkit-align-items: center
+	align-items: center
+
+/** slider **/
+
+@media screen and ( max-width: 2500px )
+.slider
+	&__wrap
+		display: flex
+		align-items: center
+	&-item
+		justify-content: center
+		flex-direction: column
+	&__image
+		margin-bottom: 10px
+	&__text
+		+light
+		margin-top: 20px
+		width: 298px
+		font-size: 24px
+		line-height: 29px
+		&.changes
+			width: 295px
+		&_first
+			width: 215px
+
+@media screen and ( max-width: 500px )
+	.slider
+		&__text
+			+light
+			margin-top: 20px
+			width: 298px
+			font-size: 20px
+			line-height: 29px
+			&.changes
+				width: 230px
+			&_first
+				width: 190px
+
+/** class: btn **/
+@media screen and ( max-width: 1201px )
+	.btn
+		padding: 12px 20px
+		& a
+			font-size: 25px
+			line-height: 40px
+
+@media screen and ( max-width: 872px )
+	.btn
+		padding: 10px 17px
+		& a
+			font-size: 22px
+			line-height: 35px
+
+@media screen and ( max-width: 755px )
+	.btn
+		padding: 8px 15px
+		& a
+			font-size: 21px
+			line-height: 35px
+
+@media screen and ( max-width: 576px )
+	.btn
+		padding: 8px 15px
+		& a
+			font-size: 19px
+			line-height: 28px
+
+@media screen and ( max-width: 450px )
+	.btn
+		padding: 8px 13px
+		& a
+			font-size: 18px
+			line-height: 23px
+
+@media screen and ( max-width: 355px )
+	.btn
+		padding: 8px 10px
+
+
+/** class: title **/	
+
+@media screen and ( max-width: 500px )
+	.title
+		font-size: 25px
+		line-height: 61px
+		text-align: center
+		+semibold
+
+@media screen and ( max-width: 450px )
+	.title
+		font-size: 21px
+		line-height: 61px	
+
+@media screen and ( max-width: 340px )
+	.title
+		font-size: 21px
+		line-height: 40px	
