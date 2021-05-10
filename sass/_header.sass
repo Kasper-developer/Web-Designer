@@ -58,7 +58,7 @@
 		&__list
 			position: relative
 			display: flex
-			justify-content: space-between 
+			justify-content: space-between
 			&::before
 				content: ''
 				position: absolute
@@ -81,7 +81,7 @@
 		position: absolute
 		top: 40px
 		right: 20px
-		z-index: 11
+		z-index: 111
 		width: 40px
 		height: 28px
 		border: 0
@@ -138,7 +138,7 @@
 			padding-bottom: 10px
 		&-logo
 			display: flex
-			justify-content: start	
+			justify-content: start
 		&-span
 			display: none
 		&-contacts
@@ -156,18 +156,19 @@
 			top: -100%
 			left: 0
 			&__list
-				display: flex
 				justify-content: center
 				align-items: center
-				height: 490px
+				height: 130vh
 				width: 768px
 				display: flex
 				flex-direction: column
 				position: absolute
-				top: -100px
+				top: -300px
 				right: 0
 				background-color: #FFD954
-				transition: all .3s
+				transition: all 0.3s
+				z-index: 99
+				bottom: 0
 				&::before
 					display: none
 			&__link
@@ -201,7 +202,7 @@
 					transform-origin: left center
 					-webkit-transform: rotate(-39deg)
 					-ms-transform: rotate(-39deg)
-					transform: rotate(-39deg)	
+					transform: rotate(-39deg)
 					top: 9px
 		&-span, &-contacts
 			display: none
