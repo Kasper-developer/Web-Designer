@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +11,7 @@
 	<link rel="stylesheet" href="css/style.css">
 	<title>Web-Designer</title>
 </head>
+
 <body>
 	<div class="wrapper">
 		<header class="header">
@@ -87,7 +89,7 @@
 					<div class="title offer__title">
 						<h2>Мы предлагаем:</h2>
 					</div>
-					<div class="slider swiper-container">
+					<div class="slider swiper">
 						<div class="slider__wrap swiper-wrapper">
 							<div class="slider-item swiper-slide">
 								<img src="img/offer/slider-1.png" alt="" class="slider__img">
@@ -189,10 +191,11 @@
 							</p>
 						</div>
 					</div>
-					<div class="work__slider swiper-container">
+					<div class="work__slider swiper">
 						<div class="work__slider_wrap swiper-wrapper">
 							<div class="swiper-slide">
 								<h3>Видеоразбор домашнего задания</h3>
+								<div class="work__shadow"></div>
 								<img src="img/work/video-prevew.jpg" class="work__img" alt="">
 								<img class="work__icon" src="img/work/video-icon.png" alt="">
 							</div>
@@ -223,16 +226,16 @@
 								<a href="#">
 									Оставить заявку
 								</a>
-						</div>	
+							</div>
+						</div>
 					</div>
-				</div>
 			</section>
 			<section class="portfolio">
 				<div class="container">
 					<div class="title portfolio__title">
 						<h2>Работы наших стажёров:</h2>
 					</div>
-					<div class="slider swiper-container">
+					<div class="slider swiper">
 						<div class="slider__wrap swiper-wrapper">
 							<div class="slider-item swiper-slide">
 								<img src="img/portfolio/item-1.jpg" alt="" class="slider__img">
@@ -257,38 +260,51 @@
 						<div class="swiper-next">
 							<img src="img/offer/right-arrow.png" alt="">
 						</div>
-				</div>
+					</div>
 			</section>
 			<section class="questions">
 				<div class="container">
-					<div class="title questions__title">
+					<div class="title questions-title">
 						<h2>Ваши вопросы:</h2>
 					</div>
-					<div class="questions__wrap">
-						<h3 class="questions__item">
-							Можно ли стажероваться удаленно или обязательно присутствовать в офисе?
-						</h3>
-						<h3 class="questions__item">
-							Кто курирует стажеров?
-						</h3>
-						<h3 class="questions__item">
-							Какими навыками нужно обладать, чтобы попасть на стажировку?
-						</h3>
-						<h3 class="questions__item">
-							Сколько длится стажировка и какие условия?
-						</h3>
-						<h3 class="questions__item">
-							Что я получу после прохождения стажировки?
-						</h3>
+					<div class="spollers-block questions__block" data-spollers="" data-one-spoller="">
+						<div class="spollers-block__item questions__item">
+							<div class="spollers-block__title questions__title" data-spoller="">Можно ли
+								стажероваться удаленно или обязательно присутствовать в офисе?</div>
+							<div class="spollers-block__body questions__body">Можно удаленно, достаточно быть на связи и иногда
+								посещать офис по возможности</div>
+						</div>
+						<div class="spollers-block__item questions__item">
+							<div class="spollers-block__title questions__title" data-spoller="">Кто курирует стажеров?</div>
+							<div class="spollers-block__body questions__body">Стажеров курируют опытные кураторы с которыми вы познакомитесь на
+								стажировке!</div>
+						</div>
+						<div class="spollers-block__item questions__item">
+							<div class="spollers-block__title questions__title" data-spoller="">Какими навыками нужно обладать, чтобы
+								попасть на стажировку?</div>
+							<div class="spollers-block__body questions__body">Достаточно уметь пользоваться интернетом и разбираться в базовых вещах
+								компьтера по типу установка удаление программ</div>
+						</div>
+						<div class="spollers-block__item questions__item">
+							<div class="spollers-block__title questions__title" data-spoller="">Сколько длится стажировка и какие
+								условия?</div>
+							<div class="spollers-block__body questions__body">Стажировка длится 2 месяца</div>
+						</div>
+						<div class="spollers-block__item questions__item">
+							<div class="spollers-block__title questions__title" data-spoller="">Что я получу после прохождения
+								стажировки?</div>
+							<div class="spollers-block__body questions__body">Понимание принципов UX/Ui, Знание Figma/Sketch, пакет программ Adobe,
+								CorelDraw, Научить работать с метрикой и поведением пользователей</div>
+						</div>
 					</div>
 				</div>
 			</section>
 			<section class="review">
 				<div class="container">
-					<div class="title questions__title">
+					<div class="title">
 						<h2>Отзывы</h2>
 					</div>
-					<div class="review__slider swiper-container">
+					<div class="review__slider swiper">
 						<div class="review__slider_wrap swiper-wrapper">
 							<div class="swiper-slide review__wrap">
 								<div class="review__image">
@@ -296,8 +312,9 @@
 								</div>
 								<div class="review__body">
 									<h3>Анастасия</h3>
-								<p>Все время прохождения стажировки я работала над реальными проектами и получала быструю и качественную обратную связь</p>
-								<a href="#" class="btn review__btn">Портфолио</a>
+									<p>Все время прохождения стажировки я работала над реальными проектами и получала быструю и
+										качественную обратную связь</p>
+									<a href="#" class="btn review__btn">Портфолио</a>
 								</div>
 							</div>
 							<div class="swiper-slide review__wrap">
@@ -306,8 +323,9 @@
 								</div>
 								<div class="review__body">
 									<h3>Максим</h3>
-								<p>Все время прохождения стажировки я работал над реальными проектами и получала быструю и качественную обратную связь</p>
-								<a href="#" class="btn review__btn">Портфолио</a>
+									<p>Все время прохождения стажировки я работал над реальными проектами и получала быструю и
+										качественную обратную связь</p>
+									<a href="#" class="btn review__btn">Портфолио</a>
 								</div>
 							</div>
 						</div>
@@ -354,26 +372,26 @@
 						</div>
 					</div>
 					<div class="footer__right">
-							<span>О компании</span>
-							<div class="footer-list">
-								<ul>
-									<li class="footer-list__link">
-										<a href="#">Наша команда</a>
-									</li>
-									<li class="footer-list__link">
-										<a href="#">Словарь терминов</a>
-									</li>
-									<li class="footer-list__link">
-										<a href="#">Вакансии</a>
-									</li>
-									<li class="footer-list__link">
-										<a href="#">Услуги</a>
-									</li>
-									<li class="footer-list__link">
-										<a href="#">Политика конфиденциальности</a>
-									</li>
-								</ul>
-							</div>
+						<span>О компании</span>
+						<div class="footer-list">
+							<ul>
+								<li class="footer-list__link">
+									<a href="#">Наша команда</a>
+								</li>
+								<li class="footer-list__link">
+									<a href="#">Словарь терминов</a>
+								</li>
+								<li class="footer-list__link">
+									<a href="#">Вакансии</a>
+								</li>
+								<li class="footer-list__link">
+									<a href="#">Услуги</a>
+								</li>
+								<li class="footer-list__link">
+									<a href="#">Политика конфиденциальности</a>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -381,9 +399,8 @@
 		<!-- /.footer -->
 	</div>
 	<!-- /.wrapper -->
-	<script src="js/jquery-3.6.0.min.js"></script>
 	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 	<script src="js/main.js"></script>
-	<script src="js/burger.js"></script>
 </body>
+
 </html>
