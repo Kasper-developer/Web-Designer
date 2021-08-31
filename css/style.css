@@ -441,39 +441,6 @@
     font-size: 11px;
   }
 }
-<<<<<<< HEAD
-=======
-@media screen and (max-width: 650px) {
-  .header-nav__list {
-    width: 650px;
-  }
-}
-@media screen and (max-width: 600px) {
-  .header-nav__list {
-    width: 600px;
-  }
-}
-@media screen and (max-width: 550px) {
-  .header-nav__list {
-    width: 550px;
-  }
-}
-@media screen and (max-width: 500px) {
-  .header-nav__list {
-    width: 500px;
-  }
-}
-@media screen and (max-width: 450px) {
-  .header-nav__list {
-    width: 450px;
-  }
-}
-@media screen and (max-width: 400px) {
-  .header-nav__list {
-    width: 400px;
-  }
-}
->>>>>>> 75a12c33b1ea4c0806eff58fe129fc4d92d8f23d
 .description {
   margin-bottom: 53px;
   background: url("../img/description/desc_bg-1.jpg") left no-repeat, url("../img/description/desc_bg-2.jpg") right no-repeat;
