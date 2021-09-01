@@ -13,7 +13,7 @@
 </head>
 
 <body>
-	<div class="wrapper">
+	<div class="wrapper" id="up">
 		<header class="header">
 			<div class="container">
 				<div class="header-wrap">
@@ -23,35 +23,32 @@
 							Since 2011
 						</span>
 					</div>
-					<div class="header-span">
-						<a href="#">Кейсы</a>
-					</div>
 					<div class="header-contacts">
 						<div class="header-contacts__phone">
 							<a href="tel:+375(29)111-55-58">
-								+375 (29) 111-55-58
+								+79 (380) 197-22-23
 							</a>
 						</div>
-						<div class="header-contacts__btn">
+						<div class="header-contacts__btn" data-btn="offer">
 							<a href="#">Заказать звонок</a>
 						</div>
 					</div>
 					<nav class="header-nav">
 						<ul class="header-nav__list">
 							<li>
-								<a href="#" class="header-nav__link">Контекстная реклама</a>
+								<a href="#learn" class="header-nav__link">Чему вы научитесь</a>
 							</li>
 							<li>
-								<a href="#" class="header-nav__link">Продвижение сайтов</a>
+								<a href="#work" class="header-nav__link">Как мы работаем</a>
 							</li>
 							<li>
-								<a href="#" class="header-nav__link">Маркетинг на запад</a>
+								<a href="#portfolio" class="header-nav__link">Работы наших стажёров</a>
 							</li>
 							<li>
-								<a href="#" class="header-nav__link">Школа маркетинга</a>
+								<a href="#questions" class="header-nav__link">Ваши вопросы</a>
 							</li>
 							<li>
-								<a href="#" class="header-nav__link">О нас</a>
+								<a href="#reviews" class="header-nav__link">Отзывы</a>
 							</li>
 						</ul>
 					</nav>
@@ -65,7 +62,7 @@
 			<!-- /.container -->
 		</header>
 		<!-- /.header -->
-		<section class="content">
+		<main class="content">
 			<section class="description">
 				<div class="container">
 					<div class="description__body">
@@ -76,7 +73,7 @@
 							Все ищут специалистов с опытом работы. <br>
 							Мы даём этот опыт начинающим.
 						</p>
-						<div class="btn description__btn">
+						<div class="btn description__btn" data-btn="offer">
 							<a href="#">
 								Оставить заявку
 							</a>
@@ -117,10 +114,10 @@
 					</div>
 				</div>
 			</section>
-			<section class="want">
+			<section class="want" id="learn">
 				<div class="container">
 					<div class="title want__title">
-						<h2>Мы хотим:</h2>
+						<h2>Чему вы научитесь:</h2>
 					</div>
 					<div class="want-wrap">
 						<div class="want-item">
@@ -160,7 +157,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="work">
+			<section class="work" id="work">
 				<div class="container">
 					<div class="title work__title">
 						<h2>Как мы работаем:</h2>
@@ -222,7 +219,7 @@
 							<p class="description__text write__text">
 								В сопроводительном письме напишите причину выбора нашей компании для прохождения стажировки
 							</p>
-							<div class="btn description__btn">
+							<div class="btn description__btn" data-btn="offer">
 								<a href="#">
 									Оставить заявку
 								</a>
@@ -230,7 +227,7 @@
 						</div>
 					</div>
 			</section>
-			<section class="portfolio">
+			<section class="portfolio" id="portfolio">
 				<div class="container">
 					<div class="title portfolio__title">
 						<h2>Работы наших стажёров:</h2>
@@ -262,7 +259,7 @@
 						</div>
 					</div>
 			</section>
-			<section class="questions">
+			<section class="questions" id="questions">
 				<div class="container">
 					<div class="title questions-title">
 						<h2>Ваши вопросы:</h2>
@@ -276,13 +273,15 @@
 						</div>
 						<div class="spollers-block__item questions__item">
 							<div class="spollers-block__title questions__title" data-spoller="">Кто курирует стажеров?</div>
-							<div class="spollers-block__body questions__body">Стажеров курируют опытные кураторы с которыми вы познакомитесь на
+							<div class="spollers-block__body questions__body">Стажеров курируют опытные кураторы с которыми вы
+								познакомитесь на
 								стажировке!</div>
 						</div>
 						<div class="spollers-block__item questions__item">
 							<div class="spollers-block__title questions__title" data-spoller="">Какими навыками нужно обладать, чтобы
 								попасть на стажировку?</div>
-							<div class="spollers-block__body questions__body">Достаточно уметь пользоваться интернетом и разбираться в базовых вещах
+							<div class="spollers-block__body questions__body">Достаточно уметь пользоваться интернетом и разбираться в
+								базовых вещах
 								компьтера по типу установка удаление программ</div>
 						</div>
 						<div class="spollers-block__item questions__item">
@@ -293,15 +292,16 @@
 						<div class="spollers-block__item questions__item">
 							<div class="spollers-block__title questions__title" data-spoller="">Что я получу после прохождения
 								стажировки?</div>
-							<div class="spollers-block__body questions__body">Понимание принципов UX/Ui, Знание Figma/Sketch, пакет программ Adobe,
+							<div class="spollers-block__body questions__body">Понимание принципов UX/Ui, Знание Figma/Sketch, пакет
+								программ Adobe,
 								CorelDraw, Научить работать с метрикой и поведением пользователей</div>
 						</div>
 					</div>
 				</div>
 			</section>
-			<section class="review">
+			<section class="review" id="reviews">
 				<div class="container">
-					<div class="title">
+					<div class="title review__title">
 						<h2>Отзывы</h2>
 					</div>
 					<div class="review__slider swiper">
@@ -314,7 +314,6 @@
 									<h3>Анастасия</h3>
 									<p>Все время прохождения стажировки я работала над реальными проектами и получала быструю и
 										качественную обратную связь</p>
-									<a href="#" class="btn review__btn">Портфолио</a>
 								</div>
 							</div>
 							<div class="swiper-slide review__wrap">
@@ -323,22 +322,21 @@
 								</div>
 								<div class="review__body">
 									<h3>Максим</h3>
-									<p>Все время прохождения стажировки я работал над реальными проектами и получала быструю и
-										качественную обратную связь</p>
-									<a href="#" class="btn review__btn">Портфолио</a>
+									<p>Стажировка вполне мне понравилось и дала много опыта и советов. Обратная связь всегда помогает
+										новичкам как я. Спасибо!</p>
 								</div>
 							</div>
 						</div>
-						<div class="swiper-prev">
-							<img src="img/offer/left-arrow.png" alt="">
-						</div>
-						<div class="swiper-next">
-							<img src="img/offer/right-arrow.png" alt="">
-						</div>
+					</div>
+					<div class="swiper-prev review__prev">
+						<img src="img/offer/left-arrow.png" alt="">
+					</div>
+					<div class="swiper-next review__next">
+						<img src="img/offer/right-arrow.png" alt="">
 					</div>
 				</div>
 			</section>
-		</section>
+		</main>
 		<!-- /.content -->
 		<footer class="footer">
 			<div class="container">
@@ -346,49 +344,49 @@
 					<div class="footer__left">
 						<div class="footer__social">
 							<a href="#" class="footer__link">
-								<img src="img/footer/social_icons/instagram.png" alt="">
+								<span class="icon-instagram"></span>
 							</a>
 							<a href="#" class="footer__link">
-								<img src="img/footer/social_icons/youtube.png" alt="">
+								<span class="icon-youtube"></span>
 							</a>
 							<a href="#" class="footer__link">
-								<img src="img/footer/social_icons/vk.png" alt="">
+								<span class="icon-vk"></span>
 							</a>
 							<a href="#" class="footer__link">
-								<img src="img/footer/social_icons/facebook.png" alt="">
+								<span class="icon-facebook"></span>
 							</a>
 							<a href="#" class="footer__link">
-								<img src="img/footer/social_icons/telegram.png" alt="">
+								<span class="icon-telegram"></span>
 							</a>
 						</div>
 						<div class="footer__phone">
 							<a href="tel:+375(29)111-55-58">
-								+375 (29) 111-55-58
+								+79 (380) 197-22-23
 							</a>
 						</div>
 						<div class="footer__address">
-							<p>Минск, пр. Победителей 103, офис 208 <br>
-								Почтовый адрес: 220004, г. Минск а/я 153</p>
+							<p>Москва, пр. Победителей 74, офис 107 <br>
+								Почтовый адрес: 155269, г. Москва а/я 133</p>
 						</div>
 					</div>
 					<div class="footer__right">
-						<span>О компании</span>
+						<span>Навигации</span>
 						<div class="footer-list">
 							<ul>
 								<li class="footer-list__link">
-									<a href="#">Наша команда</a>
+									<a href="#learn">Чему вы научитесь</a>
 								</li>
 								<li class="footer-list__link">
-									<a href="#">Словарь терминов</a>
+									<a href="#work">Как мы работаем</a>
 								</li>
 								<li class="footer-list__link">
-									<a href="#">Вакансии</a>
+									<a href="#portfolio">Работа наших стажеров</a>
 								</li>
 								<li class="footer-list__link">
-									<a href="#">Услуги</a>
+									<a href="#questions">Ваши вопросы</a>
 								</li>
 								<li class="footer-list__link">
-									<a href="#">Политика конфиденциальности</a>
+									<a href="#reviews">Отзывы</a>
 								</li>
 							</ul>
 						</div>
@@ -397,6 +395,28 @@
 			</div>
 		</footer>
 		<!-- /.footer -->
+		<div class="modal hide">
+			<div class="container">
+				<div class="modal-dialog">
+					<div class="modal-close" data-close='modal'>
+						&times;
+					</div>
+					<form action="#" class="modal-form">
+						<label for="name" class="modal-form__name-label">Введите имя</label>
+						<input type="text" class="input modal-form__name" id="name" placeholder="Ваше имя" required>
+						<label for="phone" class="modal-form__phone-label">Введите номер телефона</label>
+						<input type="tel" class="input modal-form__phone" id="phone" placeholder="Например: ivanov@mail.ru"
+							required>
+						<button type="submit" class="button modal-form__submit">Оставить заявку</button>
+					</form>
+				</div>
+				<!-- /.modal-dialog -->
+			</div>
+			<!-- /.container -->
+		</div>
+		<a href="#up" class="pageup">
+			<img src="img/up.svg" alt="Icon: Up">
+		</a>
 	</div>
 	<!-- /.wrapper -->
 	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>

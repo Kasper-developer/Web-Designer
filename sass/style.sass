@@ -10,7 +10,7 @@
 @import 'questions'
 @import 'review'
 @import 'footer'
-
+@import 'modal'
 
 body
 	+reg
@@ -23,7 +23,7 @@ body
 .btn
 	padding: 18px 45px
 	display: inline-block
-	border: 3px solid #000000 
+	border: 3px solid #000000
 	box-sizing: border-box
 	border-radius: 13px
 	& a
@@ -32,34 +32,36 @@ body
 		color: #000
 		+semibold
 
-@media screen and ( max-width: 1920px )
-	.title
-		font-size: 30px
-		line-height: 61px
-		text-align: center
-		+semibold
+.pageup
+	display: none
+	position: fixed
+	bottom: 40px
+	right: 30px
+	width: 45px
+	height: 45px
+	z-index: 115
+	img
+		width: 100%
 
+.hide
+	display: none
 
-.swiper-container
-	width: 100%
-	height: 100%
+.show
+	display: block !important
 
-.swiper-slide
-	text-align: center
-	font-size: 18px
-	background: #fff
-	display: -webkit-box
-	display: -ms-flexbox
-	display: -webkit-flex
-	display: flex
-	-webkit-box-pack: center
-	-ms-flex-pack: center
-	-webkit-justify-content: center
-	justify-content: center
-	-webkit-box-align: center
-	-ms-flex-align: center
-	-webkit-align-items: center
-	align-items: center
+.hidden
+	overflow: hidden
+
+.fade
+	animation-name: fade
+	animation-duration: 0.6s
+
+@keyframes fade
+	from
+		opacity: 0.1
+
+	to
+		opacity: 1
 
 /** slider **/
 
@@ -84,18 +86,33 @@ body
 		&_first
 			width: 215px
 
-@media screen and ( max-width: 500px )
-	.slider
-		&__text
-			+light
-			margin-top: 20px
-			width: 298px
-			font-size: 20px
-			line-height: 29px
-			&.changes
-				width: 230px
-			&_first
-				width: 190px
+@media screen and ( max-width: 1920px )
+	.title
+		font-size: 30px
+		line-height: 61px
+		text-align: center
+		+semibold
+
+.swiper-container
+	width: 100%
+	height: 100%
+
+.swiper-slide
+	text-align: center
+	font-size: 18px
+	background: #fff
+	display: -webkit-box
+	display: -ms-flexbox
+	display: -webkit-flex
+	display: flex
+	-webkit-box-pack: center
+	-ms-flex-pack: center
+	-webkit-justify-content: center
+	justify-content: center
+	-webkit-box-align: center
+	-ms-flex-align: center
+	-webkit-align-items: center
+	align-items: center
 
 /** class: btn **/
 @media screen and ( max-width: 1201px )
@@ -126,33 +143,36 @@ body
 			font-size: 19px
 			line-height: 28px
 
+@media screen and ( max-width: 500px )
+	.slider
+		&__text
+			+light
+			margin-top: 20px
+			width: 298px
+			font-size: 20px
+			line-height: 29px
+			&.changes
+				width: 230px
+			&_first
+				width: 190px
+	.title
+		font-size: 25px
+		line-height: 61px
+		text-align: center
+		+semibold
 @media screen and ( max-width: 450px )
 	.btn
 		padding: 8px 13px
 		& a
 			font-size: 18px
 			line-height: 23px
-
-@media screen and ( max-width: 355px )
-	.btn
-		padding: 8px 10px
-
-
-/** class: title **/	
-
-@media screen and ( max-width: 500px )
-	.title
-		font-size: 25px
-		line-height: 61px
-		text-align: center
-		+semibold
-
-@media screen and ( max-width: 450px )
 	.title
 		font-size: 21px
-		line-height: 61px	
+		line-height: 61px
 
 @media screen and ( max-width: 340px )
 	.title
 		font-size: 21px
-		line-height: 40px	
+		line-height: 40px
+	.btn
+		padding: 8px 10px

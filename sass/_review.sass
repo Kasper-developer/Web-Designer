@@ -1,6 +1,8 @@
 .review
+	position: relative
 	padding-bottom: 260px
 	&__title
+		margin-bottom: 30px
 	&__wrap
 		display: flex
 		align-items: center
@@ -9,7 +11,7 @@
 		padding: 20px
 		padding-right: 0
 		background: url('../img/review/bg-1.png') center no-repeat
-		background-size: contain		
+		background-size: contain
 		flex-basis: 51%
 		& img
 			width: 61%
@@ -30,11 +32,25 @@
 			line-height: 23px
 		& a
 			font-size: 29px
-			line-height: 35px		
+			line-height: 35px
 	&__btn
 		width: 248px
 		padding: 10px 5px !important
 		color: #000
+	&__prev,&__next
+		width: 70px
+		position: absolute
+		top: auto
+		bottom: 27%
+		left: 50%
+		transform: translateX(-50%)
+	&__prev
+		left: 45%
+		transform: translateX(-50%)
+	&__next
+		left: auto
+		right: 40%
+		margin-left: 0
 @media screen and ( max-width: 1201px )
 	.review
 		padding-bottom: 240px
@@ -58,7 +74,7 @@
 			margin-left: -10px
 		& .swiper-next img
 			margin-right: -10px
-		padding-bottom: 260px
+			padding-bottom: 260px
 		&__title
 		&__wrap
 			display: flex
@@ -72,6 +88,22 @@
 			flex-basis: 51%
 			& img
 				width: 80%
+		&__prev,&__next
+			width: 70px
+			position: absolute
+			top: auto
+			bottom: 27%
+			left: 50%
+			transform: translateX(-50%)
+		&__prev
+			left: 45%
+			transform: translateX(-50%)
+		&__next
+			left: auto
+			right: 40%
+			& img
+				margin: 0
+				padding: 0 !important
 
 @media screen and ( max-width: 1025px )
 	.review
@@ -79,7 +111,7 @@
 			margin-left: -10px
 		& .swiper-next img
 			margin-right: -10px
-		padding-bottom: 220px
+			padding-bottom: 220px
 		&__title
 		&__wrap
 			display: flex
@@ -121,13 +153,22 @@
 			display: flex
 			align-items: center
 		&__image
-			padding: 18px 
+			padding: 18px
 			padding-right: 0
 			background: url('../img/review/bg-1.png') center no-repeat
 			background-size: contain
 			flex-basis: 45%
 			& img
 				width: 60%
+		&__prev,&__next
+			width: 65px
+			position: absolute
+			top: auto
+			bottom: 20%
+		&__prev
+			left: 43%
+		&__next
+			right: 37%
 
 @media screen and ( max-width: 660px )
 	.review
@@ -137,7 +178,7 @@
 			display: flex
 			align-items: center
 		&__image
-			padding: 18px 
+			padding: 18px
 			padding-right: 0
 			background: url('../img/review/bg-1.png') center no-repeat
 			background-size: contain
@@ -161,11 +202,20 @@
 				line-height: 23px
 			& a
 				font-size: 24px
-				line-height: 30px		
+				line-height: 30px
 		&__btn
 			width: 200px
 			padding: 10px 2px !important
 			color: #000
+		&__prev,&__next
+			width: 60px
+			position: absolute
+			top: auto
+			bottom: 20%
+		&__prev
+			left: 40%
+		&__next
+			right: 35%
 
 @media screen and ( max-width: 550px )
 	.review
@@ -175,7 +225,7 @@
 			display: flex
 			align-items: center
 		&__image
-			padding: 18px 
+			padding: 18px
 			padding-right: 0
 			background: url('../img/review/bg-1.png') center no-repeat
 			background-size: contain
@@ -199,7 +249,7 @@
 				line-height: 23px
 			& a
 				font-size: 22px
-				line-height: 25px		
+				line-height: 25px
 		&__btn
 			width: 200px
 			padding: 10px 2px !important
@@ -213,7 +263,7 @@
 			display: flex
 			align-items: center
 		&__image
-			padding: 18px 
+			padding: 18px
 			padding-right: 0
 			background: url('../img/review/bg-1.png') center no-repeat
 			background-size: contain
@@ -237,11 +287,20 @@
 				line-height: 23px
 			& a
 				font-size: 22px
-				line-height: 25px		
+				line-height: 25px
 		&__btn
 			width: 200px
 			padding: 10px 2px !important
 			color: #000
+		&__prev,&__next
+			width: 60px
+			position: absolute
+			top: auto
+			bottom: 15%
+		&__prev
+			left: 40%
+		&__next
+			right: 25%
 @media screen and ( max-width: 460px )
 	.review
 		padding-bottom: 160px
@@ -251,7 +310,7 @@
 			align-items: center
 			flex-wrap: wrap
 		&__image
-			padding: 18px 
+			padding: 18px
 			padding-right: 0
 			background: url('../img/review/bg-1.png') center no-repeat
 			background-size: contain
@@ -278,7 +337,7 @@
 				line-height: 23px
 			& a
 				font-size: 22px
-				line-height: 25px		
+				line-height: 25px
 		&__btn
 			width: 200px
 			padding: 10px 2px !important
@@ -288,4 +347,4 @@
 		padding-bottom: 160px
 		&__title
 		&__wrap
-			margin-right: 0 
+			margin-right: 0

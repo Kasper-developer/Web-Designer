@@ -1,16 +1,89 @@
 document.addEventListener('DOMContentLoaded', () => {
 	const hamburger = document.querySelector('.header-burger'),
 		headerItem = document.querySelectorAll('.header-burger__item'),
-		burgerList = document.querySelector('.header-nav__list');
+		burgerList = document.querySelector('.header-nav__list'),
+		menuItem = document.querySelectorAll('.header-nav__list li')
 
 	hamburger.addEventListener('click', () => {
-		console.log('Click');
 		headerItem.forEach(item => {
 			item.classList.toggle('header-burger__item--active')
 			burgerList.classList.toggle('header-nav__list--active')
 			document.body.classList.toggle('lock')
 		})
 	})
+	menuItem.forEach((item, i) => {
+		item.addEventListener('click', () => {
+			burgerList.classList.remove('header-nav__list--active')
+			document.body.classList.remove('lock')
+			headerItem.forEach(item => {
+				item.classList.remove('header-burger__item--active')
+			})
+		})
+	})
+	// Плавная прокрутка в меню
+
+	let anchors = document.querySelectorAll('a[href*="#"]');
+
+	for (anchor of anchors) {
+		anchor.addEventListener('click', function (e) {
+			e.preventDefault()
+			anchorId = this.getAttribute('href')
+			document.querySelector(anchorId).scrollIntoView({
+				behavior: 'smooth',
+				block: 'start',
+			})
+		})
+	}
+
+	// = Событие прокрутки scroll
+	const pageUp = document.querySelector('.pageup');
+
+	window.addEventListener('scroll', () => {
+		if (window.pageYOffset >= 1600) {
+			pageUp.classList.add('show', 'fade')
+		} else {
+			pageUp.classList.remove('show', 'fade')
+		}
+	})
+
+	// Модальное окно
+	// Модальные окна и несколько доп.функций
+
+	const triggerBtns = document.querySelectorAll('[data-btn="offer"]'),
+		closeModalBtn = document.querySelector('[data-close="modal"]'),
+		modal = document.querySelector('.modal');
+
+
+	function openModal() {
+		modal.classList.add('show', 'fade');
+		modal.classList.remove('hide');
+		document.body.style.overflow = 'hidden';
+	}
+	triggerBtns.forEach(btn => {
+		btn.addEventListener('click', openModal)
+	})
+
+	function closeModal() {
+		modal.classList.add('hide');
+		modal.classList.remove('show', 'fade');
+		document.body.style.overflow = '';
+	}
+
+	closeModalBtn.addEventListener('click', closeModal)
+
+	modal.addEventListener('click', (e) => {
+		if (e.target === modal) {
+			closeModal();
+		}
+	})
+
+	document.addEventListener('keydown', (e) => {
+		if (e.code == 'Escape') {
+			closeModal();
+		}
+	})
+
+	// Swipers
 
 	const swiper = new Swiper('.slider', {
 		// Optional parameters
@@ -307,3 +380,4 @@ document.addEventListener('DOMContentLoaded', () => {
 		}
 	}
 })
+
