@@ -61,7 +61,6 @@ document.addEventListener('DOMContentLoaded', () => {
 		}
 	})
 
-	// Модальное окно
 	// Модальные окна и несколько доп.функций
 
 	const triggerBtns = document.querySelectorAll('[data-btn="offer"]'),
